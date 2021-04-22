@@ -11,7 +11,7 @@ const JSONData = require('../resources/test.json');
 // pass testcaseId into aftereach method to be able to add to screenshot file name
 // Find a way to capture testcase status once passed/failed
 
-describe('Test', async () =>{
+describe('Tests', async () =>{
 
 let browser,page,testcaseId,currentURL;
 
@@ -35,9 +35,7 @@ let browser,page,testcaseId,currentURL;
     });
 
 it('Valid user login', async()=>{
-
-
-
+    
   // Click input[data-test="username"]
   await page.click(HomePage.selectors.usernameTextBox);
 
@@ -52,8 +50,8 @@ it('Valid user login', async()=>{
 
   // Click input[data-test="login-button"]
   await page.click(HomePage.selectors.loginButton);
+  
   //assert.equal(await page.url(), 'https://www.saucedemo.com/inventory.html');
-  console.log('Current URL::: '+ await page.url());
   expect(await page.url()).contain(InventoryPage.selectors.pageURL);
 
   // Click text="Products"
@@ -62,7 +60,7 @@ it('Valid user login', async()=>{
 });
 
 
-it('read', async()=>{
+it('Read from JSON', async()=>{
     console.log(JSONData);
     console.log(JSONData.BASE_URL);
     console.log(JSONData.Browser);
