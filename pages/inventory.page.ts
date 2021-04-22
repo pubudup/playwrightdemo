@@ -6,13 +6,7 @@ export class InventoryPage{
    
     static selectors = {
         pageURL: 'inventory.html',
-        productsLabel: 'text="Products"'
-        
-    
-       
-    
+        productsLabel: 'text="Products"'  
 
     };
-
-
 }
