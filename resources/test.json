@@ -1,0 +1,8 @@
+{
+    "BASE_URL": "https://www.saucedemo.com/",
+    "Browser": "chromium", 
+    "Admin":{
+       "username":"standard_user",
+       "password":"secret_sauce"
+    }
+}
