@@ -8,12 +8,7 @@ export class HomePage{
         pageURL: '',
         usernameTextBox: 'input[data-test="username"]',
         passwordTextBox: 'input[data-test="password"]',
-        loginButton: 'input[data-test="login-button"]'
-    
-       
-    
+        loginButton: 'input[data-test="login-button"]' 
 
     };
-
-
 }
