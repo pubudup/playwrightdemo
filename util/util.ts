@@ -15,14 +15,6 @@ export class Util {
 
     }
 
-    static getContactId(contactURL){
-        let url = contactURL;
-        console.log(':::::::::::::::::: Current URL: '+url+' ::::::::::::::::::::::');
-        let contactId = url.match('cid=(.*)')[1];
-        console.log(':::::::::::::::::: Contact ID: '+contactId+' ::::::::::::::::::::::');
-        return contactId;
-    }
-
     static takeScreenshot(page,testcaseId){
         page.screenshot({ path: __dirname+`/screenshots/`+testcaseId+`.png` });
         return testcaseId;
